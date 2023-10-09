@@ -1,0 +1,228 @@
+{
+	"compiler": {
+		"version": "0.8.19+commit.7dd6d404"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_propertyType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "_propertyAddress",
+						"type": "string"
+					}
+				],
+				"name": "addProperty",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "issues",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "description",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "resolved",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_propertyAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_tenantInfo",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_startDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_endDate",
+						"type": "uint256"
+					}
+				],
+				"name": "leaseProperty",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "leases",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "tenantInfo",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "startDate",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "endDate",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "properties",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "propertyType",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "propertyAddress",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_propertyAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "string",
+						"name": "_description",
+						"type": "string"
+					}
+				],
+				"name": "reportIssue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_propertyAddress",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_issueIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "resolveIssue",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_propertyAddress",
+						"type": "address"
+					}
+				],
+				"name": "terminateLease",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/RentalContract.sol": "RentalContract"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/RentalContract.sol": {
+			"keccak256": "0x9b1a222a0ab7a3bdc19aa55886668edfee5d20af78731d868ea61e7a6c76a571",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://7bee988180c769af71b567129252e804abf9a59a8e461a380107f304ef773f34",
+				"dweb:/ipfs/QmNooGVyGanMiVnTQazkG3N5RxskwH3LUP6h87J1qn739r"
+			]
+		}
+	},
+	"version": 1
+}
